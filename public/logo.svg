@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lilita+One&amp;family=Outfit:wght@800&amp;display=swap');
+      .bg { fill: #faf0e3; }
+      .letter {
+        font-family: 'Lilita One', sans-serif;
+        font-size: 115px;
+        font-weight: bold;
+      }
+      .green { fill: #5b8a6a; }
+      .yellow { fill: #f2b83f; }
+      .orange { fill: #e67e52; }
+      .blue { fill: #8aa3e2; }
+      .subtitle {
+        font-family: 'Outfit', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        fill: #8aa3e2;
+        letter-spacing: 7px;
+        text-anchor: middle;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" class="bg" />
+  
+  <g opacity="0.95" style="mix-blend-mode: multiply;">
+    <!-- Row 1: TRIVI -->
+    <!-- T -->
+    <text x="55" y="225" class="letter green" transform="rotate(-8 95 180)">T</text>
+    <!-- R -->
+    <text x="135" y="220" class="letter yellow" transform="rotate(6 175 180)">R</text>
+    <!-- I -->
+    <text x="225" y="220" class="letter orange" transform="rotate(4 250 180)">I</text>
+    <!-- V -->
+    <text x="265" y="225" class="letter blue" transform="rotate(-5 315 180)">V</text>
+    <!-- I -->
+    <text x="360" y="225" class="letter green" transform="rotate(8 380 180)">I</text>
+    
+    <!-- Row 2: YAY -->
+    <!-- Y -->
+    <text x="120" y="335" class="letter blue" transform="rotate(-6 160 290)">Y</text>
+    <!-- A -->
+    <text x="205" y="340" class="letter orange" transform="rotate(5 250 290)">A</text>
+    <!-- Y -->
+    <text x="300" y="335" class="letter yellow" transform="rotate(10 340 290)">Y</text>
+  </g>
+  
+  <!-- Subtitle -->
+  <text x="250" y="415" class="subtitle">LEARNING IS FUN</text>
+</svg>

@@ -528,20 +528,56 @@ code {
 }
 
 /* Question Area */
-.question-text {
-  min-height: 130px;
-  padding: 22px;
+.question-prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
   margin-bottom: 20px;
+}
+
+.question-mascot {
+  width: 72px;
+  margin-top: 12px;
+}
+
+.speech-bubble {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  min-height: 138px;
+  padding: 18px 18px 20px;
   border: 3px solid #1e291f;
   border-radius: 12px;
   background: #ffffff;
   box-shadow: 5px 5px 0 #1e291f;
+  animation: question-pop 320ms ease both;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 34px;
+  width: 24px;
+  height: 24px;
+  border-left: 3px solid #1e291f;
+  border-bottom: 3px solid #1e291f;
+  background: #ffffff;
+  transform: rotate(45deg);
+}
+
+.speech-bubble .question-count {
+  margin-bottom: 8px;
+}
+
+.question-text {
+  margin: 0;
   color: #1e291f;
   font-size: clamp(1.35rem, 6.5vw, 1.8rem);
   font-family: 'Lilita One', cursive, sans-serif;
   font-weight: normal;
   line-height: 1.25;
-  animation: question-pop 320ms ease both;
+  overflow-wrap: anywhere;
 }
 
 /* Answer Choices */

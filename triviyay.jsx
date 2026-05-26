@@ -520,7 +520,6 @@ export default function Triviyay() {
             <header className="brand-block">
               <Mascot mascot={mascot} color={color} className="hero-mascot" />
               <TriviYAYLogo />
-              <p className="subtitle">Jawab cepat, kumpulin skor, terus ganti maskot sesuka lu.</p>
             </header>
 
             <div className="quick-stats">
@@ -599,7 +598,6 @@ export default function Triviyay() {
           <div className="screen">
             <button className="back-btn" onClick={clickPlay(() => setScreen("home"))}>‹ Back</button>
             <h2>Custom Maskot</h2>
-            <p className="hint">Brainy jadi maskot utama. Kalau mau ganti slot lain, taruh gambar lu di <code>public/mascots</code> lalu pakai nama file <code>mascot-1.png</code> sampai <code>mascot-3.png</code>.</p>
 
             <div className="preview-panel">
               <Mascot mascot={mascot} color={color} className="preview-mascot" />
@@ -746,8 +744,13 @@ export default function Triviyay() {
               <div style={{ width: `${progress}%` }} />
             </div>
 
-            <p className="question-count">Soal {index + 1} dari {round.length}</p>
-            <h2 className="question-text">{current.q}</h2>
+            <div className="question-prompt">
+              <Mascot mascot={mascot} color={color} className="question-mascot" />
+              <div className="speech-bubble">
+                <p className="question-count">Soal {index + 1} dari {round.length}</p>
+                <h2 className="question-text">{current.q}</h2>
+              </div>
+            </div>
 
             <div className="answer-list">
               {current.options.map((option, optionIndex) => {
